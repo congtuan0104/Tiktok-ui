@@ -1,0 +1,16 @@
+.wrapper {
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    .container {
+        margin-top: var(--default-layout-header-height);
+        height: 100%;
+        width: var(--default-layout-width);
+        background: #fff;
+        display: flex;
+        .content {
+            flex: 1;
+            background: rgba(207, 103, 152, 0.504);
+        }
+    }
+}

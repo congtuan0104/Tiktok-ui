@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .content {
+        width: var(--default-layout-width);
+        background: rgb(205, 111, 111);
+        min-height: 1000px;
+    }
+}

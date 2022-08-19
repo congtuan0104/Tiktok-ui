@@ -1,0 +1,67 @@
+.wrapper {
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+//button types
+
+.primary {
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    color: white;
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+
+.outline {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    &:hover {
+        background-color: rgba(234, 232, 232, 0.482);
+    }
+}
+
+.outline.primary {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+// button size
+.small {
+    min-width: 80px;
+    padding: 4px 16px;
+}
+
+.medium {
+    min-width: 100px;
+    padding: 9px 16px;
+}
+
+.large {
+    min-width: 120px;
+    padding: 14px 16px;
+}
+
+.full {
+    width: 100%;
+    padding: 9px 0;
+}
+
+.rounded {
+    border-radius: 999px;
+}
