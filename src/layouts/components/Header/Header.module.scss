@@ -21,97 +21,43 @@
             align-items: center;
         }
 
-        .search-title {
-            padding: 6px 16px;
-            color: rgba(22, 24, 35, 0.5);
-        }
-
-        .search-bar {
-            width: var(--search-bar-width);
-            height: 46px;
-            background: #f1f1f2;
-            border-radius: var(--search-border-radius);
-            padding: 0 16px;
-            position: relative;
-            display: flex;
-            border: 1.5px solid transparent;
-            &:focus-within {
-                border: 1.5px solid rgba(128, 128, 128, 0.4);
-            }
-
-            input {
-                width: 100%;
-                flex: 1;
-                caret-color: var(--primary);
-                color: #828282;
-                border: none;
-                outline: none;
-                background: transparent;
-                font-size: 1.6rem;
-            }
-
-            input:not(:placeholder-shown) ~ .btn-search {
-                color: red;
-            }
-
-            .btn-clear,
-            .loading {
-                color: rgb(167, 167, 167);
-                background-color: transparent;
-                border: none;
-                position: absolute;
-                right: 64px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .btn-clear {
-                font-size: 15px;
-                &:hover {
-                    color: rgb(153, 153, 153);
-                }
-            }
-
-            .loading {
-                visibility: hidden;
-            }
-
-            span {
-                width: 1px;
-                height: 28px;
-                background: rgba(22, 24, 35, 0.12);
-                margin: auto 0;
-            }
-
-            .btn-search {
-                padding: 11px 16px 11px 12px;
-                margin-right: -16px;
-                border: none;
-                outline: none;
-                border-top-right-radius: var(--search-border-radius);
-                border-bottom-right-radius: var(--search-border-radius);
-                background-color: transparent;
-                &:hover {
-                    cursor: pointer;
-                    background-color: rgba(22, 24, 35, 0.03);
-                }
-            }
-        }
-
         .action-bar {
             height: 100%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
+            .btn-message,
+            .btn-envelope {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+
+            .user-avatar {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                margin-left: 20px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.9;
+                }
+            }
+
             .options {
                 font-size: 2rem;
                 margin-left: 6px;
-                border-radius: 50%;
                 &:hover {
                     cursor: pointer;
-                    background-color: rgba(204, 204, 204, 0.5);
+                    color: rgb(53, 53, 53);
                 }
+            }
+
+            .menu-item {
+                min-width: 180px;
             }
         }
     }

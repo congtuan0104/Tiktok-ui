@@ -1,0 +1,50 @@
+.menu-container {
+    min-width: 200px;
+    color: rgb(35, 35, 35);
+    font-weight: 400;
+}
+
+.menu-item {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    background-color: transparent;
+    line-height: 2rem;
+    &:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    .icon {
+        margin-right: 8px;
+    }
+
+    &.separate {
+        border-top: 1px solid rgba(119, 119, 119, 0.342);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 14px 16px;
+    }
+}
+
+.header {
+    position: relative;
+    color: rgb(65, 65, 65);
+    padding: 9px 16px;
+    margin-top: -8px;
+    .btn-back {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: rgb(65, 65, 65);
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

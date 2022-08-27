@@ -1,11 +1,13 @@
 .wrapper {
     border-radius: 4px;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: 16px;
     border: none;
     outline: none;
     user-select: none;
+    text-decoration: none;
+    color: inherit;
     &:hover {
         cursor: pointer;
     }
